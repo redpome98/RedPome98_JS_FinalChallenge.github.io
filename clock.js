@@ -1,4 +1,8 @@
-const Clock=document.querySelector("#time");
+const Year=document.querySelector("#year");
+const Month=document.querySelector("#month");
+const Day=document.querySelector("#date");
+const Hour=document.querySelector("#hour");
+const Minute=document.querySelector("#minute");
 
 function currentTime(){
     const current=new Date();
@@ -7,7 +11,11 @@ function currentTime(){
     const currentDate=String(current.getDate()).padStart(2,"0");
     const currentHour=String(current.getHours()).padStart(2,"0");
     const currentMin=String(current.getMinutes()).padStart(2,"0");    
-    Clock.innerText=`${currentYear}:${currentMonth}:${currentDate}:${currentHour}:${currentMin}`;
+    Year.innerText=`${currentYear}`;
+    Month.innerText=`${currentMonth}`;
+    Day.innerText=`${currentDate}`;
+    Hour.innerText=`${currentHour}h:${currentMin}m`;
+
 }
 
 currentTime();

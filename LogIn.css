@@ -1,0 +1,17 @@
+.LogIn{
+    position:absolute;
+    top:600px;
+}
+
+.FormHide{
+    display:none; 
+}
+
+
+#AfterLogIn{
+    position:absolute;
+    top:600px;
+    font-family: 'Roboto';
+    
+
+}
